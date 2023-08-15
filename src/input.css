@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Noto Sans";
+    src: url("../public/NotoSansJP-VariableFont_wght.ttf");
+}
+
+* {
+    font-family: "Noto Sans", sans-serif, "Meiryo UI";
+}
+
+@layer components {
+    .link {
+        @apply cursor-pointer font-semibold
+    }
+}
